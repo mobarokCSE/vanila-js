@@ -1,0 +1,124 @@
+1: Hoisting - variable and function are hoisted means their declaration is moved on the top of the code.
+    var x = 10;
+    var x; ------ declaration  --<--- move on top
+    x=10; initialization
+
+2: Undefined and Not-defiend
+    Undefined:- "undefined" is a primitive value that indicates that a variable has been declared but not yet assigned a value.
+    Not-defiend:- variable or function hasn't been declared in the code.
+
+3: Type in JS:- ( primitive, Non-primitive or reference)
+    primitive:- Number, string, null, undefined, boolean, BigIntm, Symbol (maintain single block)
+    Non-primitive/reference:- [], (), {}, list/array , object  ( if bracket then it called reference otherwise primitive)
+    note:-( amon kono value ja copy korar por ata real copy hoy na kinto atar main value er reference pass hoi take
+    amra non-primitive ba reference value boli, R jokhon kono value copy kole ta real copy hoy take primitive value bole)
+
+4: loop: (for, while)
+    for:- 
+    for(start; end; change){}
+    while:-
+    var a = 12
+    while(a>12){
+        a++
+    }
+
+5: function: function hocce code er akta nam deowa
+    3 reson for use function:
+    -------------------------
+    1: jokhon code sathe sathe run na kore future e use korte hoy 
+    2: jokhon code reuse korte hoy
+    3: jokhon code bar bar run korte hoy different data type er sathe
+
+    argument: real value jokhon function call korar somy deowa hoy
+    parametter: variable jegolote value store hoi argument theke jegolo pass hoy
+
+6: Array: group of values
+    / push, pop, shift, unshift
+    push: add array value in last index
+    pop: remove array value in last index
+    unshift: add value first in array index
+    shift: remove value first in array index
+    splice: remove value in middle of array; ex: var.splice(index, value(how many want to delete))
+
+    exam:  var x = [1, 2, 3, 4, 5, 9]
+
+    var.splice(2,3) 
+
+
+07: variable Var, (Let, const) - difference between
+    Var:-
+        => it use old js (ES5)
+        => it function scope, -> var tar parent function er jakhono jaygay use kora jay.
+        => var add itself window object
+        => it can redeclure, re-assigned, global scope, and also hoisted 
+    let, const:-
+        => it use new js (ES6)
+        => it braces/block scope
+        => it can't add itself window object
+        => it can't redeclure, block scope, and not hoisted 
+        => let should be re-assigned, but cont not re-assigned
+
+08: Browser Context API - it gives features (window, stack, heap memory, )
+
+09: Window: browser theke amn sob feature ja javascript er part na but amra use korte pari , khujte pari
+    perticular object er modde take window bole. easily say window is box of features given by browser
+    to use with js.
+
+10: stack memory: jekhane function er variable golo store hoy and function ses hole ati autometic remove hoi jay
+    ta hocce stack memory
+
+11: heap memory: jekhane boro data jmn(object, array) rakha hoy function ses hole ta theke jay
+    take heap memory bole. ata data long time store kore rakhe , r flexiable
+
+12: Executon context: The execution context is like the “workspace” where JavaScript code is executed. 
+    Every time your code runs (whether it's global code or inside a function), it happens within an execution context.
+    =>  execution context is container where the function code is executed and it is created whenever a function is called
+    It contant 3 things:
+        - variable
+        - functions
+        - lexical environment
+
+13: Lexical environment: lexical environment hocce akta chart jekhane likha thake apnr perticular function
+    kon kon jinis golo access kote parbe r kon kon golo k parbe na. It hold scope or its scope chain.
+
+14: Copy reference values: when copy reference value use [...] 
+
+15: Truthy VS Falsy : ( JS er modde ja e likha hoy ta hoy Truthy value hoy noyto Falsy value hoy)
+    Truthy:- all values are Truthy without Falsy values;
+    Falsy:- all are falsy vlue ( 0, false, Undefined, NaN, null, document.all) 
+
+16: forEach:-  working with arrays and want to process each element.  forEach kokhono orginal array k change kore na. 
+            se temporary copy kore copy value er sahte change kore.
+            array k real copy kora jay .. ?
+
+            array.forEach(function(element, index, array) {
+                // Code to execute for each element
+            });
+
+17: forin: working with objects and want to access each key-value pair.
+            for (let key in object) {
+                // Code to execute for each key
+            }
+
+18: first class function: function k vlue hisebe use korar jay,
+         function test(a){
+             a();
+         }
+         test(function(){
+             console.log("hello check first class function")
+         })
+
+19: how arrays are made behind the scenes: array assign like as object
+
+20: function - old javascript function 3 types
+    1: function statement : ex: function name(){}
+    2: function expression : ex: var myfun = function name(){}
+    2: anonymous function : ex: function(){}
+
+    new JS e main function hocce arrow function 
+    ex: ()=>{}, var myfunction = ()=> {}
+
+
+
+
+

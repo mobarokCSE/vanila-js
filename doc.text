@@ -1,0 +1,22 @@
+// ==========  Complete topics ======== //
+
+01: word vs keyword
+02: variable Var, (Let, const) - difference between
+03: Hoisting 
+04: Type of JS
+05: primitive and Non-primitive/reference
+06: Conditionals - if, else, else if
+07: loop - for, while
+08: function 
+09: array
+10: Browser Context API 
+    -- window object
+    -- stact
+    -- heap memory
+    -- execution context
+    -- lexical environment
+11: how to copy reference values
+12: Truthy & Falsy
+13: forEach (use for array)
+14: forin (use for object)
+15: first class function 
